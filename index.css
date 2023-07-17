@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
- 
+  background-color: gray; 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 li a{
-    font-family: Arial, Helvetica, sans-serif;
+   
     font-weight: 500;
     font-size:  16px;
     color:  black;
@@ -17,7 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  30px 10%;
+    padding:  20px 10%;
 }
 
 .logo{
@@ -38,5 +39,17 @@ header{
 }
 
 .navLinks li a:hover{
-    color:chartreuse;
+    color:white;
+}
+
+.comp-banner{
+    display: flex;
+    justify-content: center;
+}
+.comp-banner p{
+    background-color: aqua;
+    font-size: 40px;
+    border-radius: 20px;
+    width: 900px;
+    text-align: center;
 }
