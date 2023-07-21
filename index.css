@@ -2,14 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  background-color: gray; 
+    background-color: rgb(177, 185, 164); 
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Navigation Bar*/
 li a{
-   
     font-weight: 500;
-    font-size:  16px;
+    font-size:  18px;
     color:  black;
     text-decoration:  none;
 }
@@ -41,15 +41,106 @@ header{
 .navLinks li a:hover{
     color:white;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.dropdown-menu li {
+    display: block;
+    padding: 5px 0;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu li a {
+    color: black;
+}
+
+.dropdown-menu li a:hover {
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-menu li {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Competition banner*/
 .comp-banner{
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 .comp-banner p{
-    background-color: aqua;
+    box-shadow:  5px 5px 10px 8px rgba(0,0,0,0.24);
+    background-color: azure;
     font-size: 40px;
     border-radius: 20px;
-    width: 900px;
+    width: 1100px;
+    padding: 20px;
     text-align: center;
+}
+
+/* image boxes competition */
+.product-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:  solid #000;
+    margin: 50px;
+}
+.product-card {
+    padding: 0 0 63px 0;
+    text-align: center;
+    height: 673px;
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .product-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .product-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+#timer{
+    background-color:firebrick;
+    border-radius: 20px;
+    font-weight: 600;
+    margin: 10px;
 }
