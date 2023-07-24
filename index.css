@@ -96,11 +96,12 @@ header{
     text-align: center;
 }
 
-/* image boxes competition */
+/* product boxes competition */
 .product-card-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+   align-self:flex-start;
     border:  solid #000;
     margin: 50px;
 }
@@ -127,7 +128,6 @@ header{
     font-size: 16px;
     margin-bottom: 20px;
   }
-  
   .product-card button {
     background-color: #007bff;
     color: #fff;
@@ -135,12 +135,15 @@ header{
     padding: 10px 50px;
     border-radius: 5px;
     cursor: pointer;
-    width: fit-content;
+    width: 350px;
+    font-size: 20px;
+    margin-top: 140px;
   }
 
 #timer{
     background-color:firebrick;
     border-radius: 20px;
     font-weight: 600;
-    margin: 10px;
+    margin: 5px;
+    padding: 10px 60px;
 }
