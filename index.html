@@ -8,60 +8,20 @@
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 </head>
 <body>
-<header>
-    <img class="logo" src="/images/logo.png" alt="logo" href="./index.html">
-    <nav>
-        <ul class="navLinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Current Competitions</a></li>
-            <li><a href="#">Previous Winners</a></li>
-            <li class="dropdown">
-                <a>More </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
-<div class="comp-banner-container">
-    <div class="comp-banner">
-        <p>Featured Competitions</p>
-    </div>
-</div>
-<div class="product-card-container">
-<div class="product-card">
-    <img src="./images/paramount-logo-vector.svg" alt="Product Image">
-    <div id="timer"></div>
-    <h2>Product Title</h2>
-    <p>Product Description</p>
-    <button>Enter Now</button>
-  </div>
-</div>
-<script>
-    const timerElement = document.getElementById('timer');
 
-const SEVEN_DAYS_IN_MS = 7 * 24 * 60 * 60 * 1000;
-
-let endTime = Date.now() + SEVEN_DAYS_IN_MS;
-
-function updateTimer() {
-  const remainingTime = endTime - Date.now();
-  if (remainingTime <= 0) {
-    timerElement.textContent = 'Timer expired';
-  } else {
-    const remainingSeconds = Math.floor(remainingTime / 1000);
-    const days = Math.floor(remainingSeconds / (24 * 60 * 60));
-    const hours = Math.floor((remainingSeconds % (24 * 60 * 60)) / (60 * 60));
-    const minutes = Math.floor((remainingSeconds % (60 * 60)) / 60);
-    const seconds = remainingSeconds % 60;
-    timerElement.textContent = `Timer: ${days}d ${hours}h ${minutes}m ${seconds}s`;
-  }
-}
-
-updateTimer();
-setInterval(updateTimer, 1000);
-</script>
+<nav>
+    <ul class="navLinks">
+        <li class="logo"><a href="https://youtu.be/6pidsgeLLzE?t=1393">Prize Panda</a></li>
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Current Competitions</a></li>
+        <li class="link"><a href="#">Previous Winners</a></li>
+        <li class="link"><a href="#">Contact</a></li>
+        <li class="link"><a href="#">About us</a></li>
+        <li class="link login button"><a href="#">Login</a></li>
+        <li class="link signUp button"><a href="#">Sign Up</a></li>
+        <li class="link cart button"><a href="#">Cart</a></li>
+        <li class="toggle"><span class="bars"></span></li>
+    </ul>
+</nav>
 </body>
 </html>
