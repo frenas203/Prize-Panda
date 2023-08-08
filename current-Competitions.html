@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="current-Competitions.css">
+    <title>Current Competitions - Prize Panda</title>
+    <link rel="shortcut icon" href="./images/fav-logo.png" type="image/x-icon"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 </head>
 <body>
-  
+
+    <div class="navBar-Container">
+    <div class="navbar">
+        <div class="navlogo">
+            <img src="./images/Prize Panda-logo.png" alt="logo" width="150px">
+        </div>
+        <nav>
+            <ul id="menuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="current-Competitions.html">Current Competitions</a></li>
+                <li><a href="#">Previous Winners</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+           <img src="./images/cart.svg" alt="cart" width="30px" height="30px">
+           <img src="./images/menu.png"class="menu-icon" onclick="menuToggle()">
+    </div>
+</div>
+
+<div class="small-container">
+
+  <div class="row">
+    <h2>All Competitions</h2>
+    <select>
+      <option ></option>
+    </select>
+  </div>
+
+    <div class="row">
+        <div class="col-4">
+            <img src="./images/category-1.jpg">
+            <h4>Lorem</h4>
+            <p>£0.50</p>
+        </div>
+        <div class="col-4">
+            <img src="./images/category-1.jpg">
+            <h4>Lorem</h4>
+            <p>£0.50</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/category-2.jpg">
+                <h4>Lorem</h4>
+                <p>£0.50</p>
+                </div>
+                <div class="col-4">
+                    <img src="./images/category-3.jpg">
+                    <h4>Lorem</h4>
+                    <p>£0.50</p>
+                    </div>
+    </div>
+<!-- Footer & Copyright -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>Payment Methods we support</h3>
+            <p>We support most of the common payment gateways</p>
+            <div class="pay-logos">
+                <img src="./images/mastercard-logo.svg" alt="">
+                <img src="./images/amex-logo.svg" alt="">
+                <img src="./images/paypal-logo.svg" alt="">
+                <img src="./images/visacard-logo.svg" alt="">
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <img src="./images/Prize Panda-logo.png" alt="">
+            <p>Our mission is straightforward: play the raffle, win, and have fun while giving back to the community.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+                <li>FAQ'S</li>
+                <li>Shipping</li>
+                <li>Privacy Policy </li>
+                <li>Terms of service</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li> 
+                <li>Tiktok</li>
+                <li>Youtube</li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">&#169; Copyright 2023 - Prize Panda LLC</p>
+    </div>
+</div>
+<!-- JS for menu toggle-->
+<script>
+    let menuItems =document.getElementById("menuItems");
+
+    menuItems.style.maxHeight = "0px"
+
+    function menuToggle(){
+        if(menuItems.style.maxHeight == "0px")
+            {
+                menuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                menuItems.style.maxHeight = "0px"
+            }
+    }
+</script>
 </body>
 </html>
